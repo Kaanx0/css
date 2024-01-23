@@ -1,0 +1,516 @@
+/* Reset styles and global settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Body styles */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Navbar styles */
+header {
+  height: 49px;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Navbar left section styles */
+header .left {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+}
+
+/* Navbar link styles */
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+}
+
+/* Navbar link hover styles */
+header .left a:hover {
+  background: #cccccc;
+  color: #000;
+}
+
+/* Navbar right section styles */
+header .right {
+  position: absolute;
+  color: #fff;
+  font-size: 14px;
+  right: 0;
+  top: 49%;
+  transform: translateY(-50%);
+  padding: 16.6px;
+  cursor: pointer;
+}
+
+/* Navbar right section hover styles */
+header .right:hover {
+  background: #f44336;
+}
+
+/* Banner styles */
+.banner {
+  height: 90vh;
+  background: url("images/banner_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  gap: 20px;
+}
+
+/* Banner heading styles */
+.banner h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Banner paragraph styles */
+.banner p {
+  font-style: italic;
+  padding-bottom: 2em;
+}
+/* Text Align */
+.banner p,h3{
+  padding-left: 20px;
+}
+
+/* Container styles */
+.container {
+  margin: 0 47px;
+}
+
+/* Band text section styles */
+.band-text {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Band text heading styles */
+.band-text h1, #shadow {
+  text-align: center;
+}
+
+/* Band text main heading styles */
+.band-text h1 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+/* Band text shadow paragraph styles */
+#shadow {
+  color: #666666;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Band text main text styles */
+.band-text #main-text {
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 700px;
+  text-align: justify;
+  word-spacing: 1px;
+}
+
+/* Band images section styles */
+.band-images {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  text-align: center;
+}
+
+/* Band image styles */
+.band-images .band img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Band image caption styles */
+.band-images .band p {
+  margin-bottom: 20px;
+  font-variant: small-caps;
+  font-size: 18px;
+}
+
+/* Tour dates section styles */
+.tour-dates {
+  height: 800px;
+  position: relative;
+  margin: 100px 0px 40px 0px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Tour dates heading styles */
+.tour-date-heading {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Tour dates main heading styles */
+.tour-date-heading h2 {
+  color: #fff;
+  font-size: 26px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+/* Tour dates paragraph styles */
+.tour-date-heading p {
+  margin-top: 16px;
+  color: #999999;
+  letter-spacing: 2px;
+}
+
+/* Sold out section styles */
+.tour-dates .months {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 9px 0px 5px 20px;
+}
+
+/* Sold out line styles */
+.tour-dates .months .line::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 36px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 700px;
+  height: 1px;
+  background: #dddddd;
+}
+
+/* Tickets left line styles */
+.tour-dates .months #tickets-left::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 65px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 700px;
+  height: 1px;
+  background: #dddddd;
+}
+
+/* Sold out badge styles */
+#sold {
+  margin-left: 10px;
+  background: #f44336;
+  color: #fff;
+  padding: 2px;
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Tickets left section styles */
+#tickets-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tickets left number styles */
+#number {
+  margin-right: 3em;
+  background: black;
+  font-size: 10px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 12px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Cities section styles */
+.tour-dates .cities .box img {
+  width: 227px;
+  height: 140px;
+  object-fit: cover;
+}
+
+/* Cities image hover styles */
+.tour-dates .cities .box img:hover {
+  opacity: 0.8;
+}
+
+/* Grey text styles */
+.grey {
+  color: #757575;
+}
+
+/* Cities section container styles */
+.cities {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Cities box styles */
+.cities .box {
+  width: 227px;
+  height: 335px;
+  background: #fff;
+}
+
+/* Inner box styles */
+.inner-box {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+/* Button styles */
+button {
+  width: 100px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  font: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Date text styles */
+#date {
+  color: gray;
+  font-size: 14px;
+}
+
+/* Ticket text styles */
+.box .ticket-text {
+  font-size: 14px;
+}
+
+/* Contact form styles */
+.contact-form {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+/* Contact form container styles */
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+}
+
+/* Right form styles */
+.form .right-form {
+  margin-bottom: 70px;
+}
+
+/* Form input styles */
+.form .left-form form #name,
+.form .left-form form #email,
+.form .left-form form #message {
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+/* Name input styles */
+.form .left-form form #name {
+  width: 200px;
+  margin-right: 10px;
+}
+
+/* Message input styles */
+.form .left-form form #message {
+  display: block;
+  margin: 10px 0;
+  width: 420px;
+}
+
+/* Submit button styles */
+.form .left-form form button {
+  display: block;
+  margin: 10px 0;
+  float: right;
+  width: 60px;
+}
+
+/* Button hover styles */
+button:hover {
+  background: #cccccc;
+}
+
+/* Contact header styles */
+#contact-header {
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+/* Fan text styles */
+.fan {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Map styles */
+#map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(50%);
+}
+
+/* Social media section styles */
+.social {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #757575;
+  gap: 20px;
+}
+
+/* Social media icon styles */
+.social i {
+  cursor: pointer;
+}
+
+/* Social media icon hover styles */
+.social i:nth-child(1):hover {
+  color: blue;
+}
+.social i:nth-child(2):hover {
+  color: #c13584;
+}
+.social i:nth-child(3):hover {
+  color: #fffc00;
+}
+.social i:nth-child(4):hover {
+  color: #e60023;
+}
+.social i:nth-child(5):hover {
+  color: #1da1f2;
+}
+.social i:nth-child(6):hover {
+  color: #0077b5;
+}
+
+/* Space styles */
+#space {
+  display: block;
+}
+
+/* Media query for larger screens */
+@media only screen and (max-width: 1910px) {
+  .banner {
+    margin: 0;
+  }
+
+  .container {
+    margin: 0;
+  }
+}
+
+/* Media query for screens up to 600px */
+@media only screen and (max-width: 600px) {
+  .band-text {
+    margin: 20px;
+  }
+
+  .band-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .band-images .band img {
+    width: 450px;
+    height: 500px;
+  }
+  
+  .band-images .band p {
+    font-size: 26px;
+    letter-spacing: 5px;
+  }
+
+  .tour-dates {
+    height: auto;
+  }
+}
+
+/* Media query for screens up to 768px */
+@media only screen and (max-width: 768px) {
+  .tour-dates .cities {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .cities .box {
+    width: 90%;
+    height: auto;
+  }
+
+  .tour-dates .cities .box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tour-dates {
+    height: auto;
+  }
+
+  .contact-form .right-form {
+    display: none;
+  }
+}
