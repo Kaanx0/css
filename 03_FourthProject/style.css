@@ -1,0 +1,264 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+/* Header Starts Here */
+header{
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 999;
+  height: 50px;
+  width: 100%;  
+  padding: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+header ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:10px;
+  padding-right: 10px;
+}
+header ul li{
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px 16px;
+}
+header .logo{
+  padding: 8px 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 3px;
+  font-size: 14px;
+ 
+}
+header .logo span{
+  font-weight: 700;
+  margin-right: 10px;
+}
+header ul li:hover,.logo:hover{
+  background: #cccccc;
+}
+/* Header Ends Here  */
+
+ /* Banner Starts Here  */
+.banner{
+  margin: 0px auto 40px auto;
+  max-width:1400px;
+  position: relative;
+  
+}
+.banner img{
+  width: 100%;  
+  max-height:600px;
+  object-fit: cover; 
+}
+.banner .bannerLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;   
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  
+}
+.banner .bannerLogo #br{
+  margin-right: 20px;
+  padding: 5px 20px;
+  background: #2d2f30;
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.banner .bannerLogo #arc{
+  color: #fff;
+}
+ 
+/* Banner Ends Here */
+
+/* To center the whole page */
+.container{ 
+  
+  margin: 0 auto 40px auto;
+  padding: 0 30px;  
+  max-width: 1400px;
+}
+.container h2{
+  font-weight: 400;
+  border-bottom: 1px solid #ddd; 
+  padding: 16px 0; 
+  
+}
+/* People Section */
+.block-container{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 30px;
+
+}
+.block-container .block{
+  width: 100%;
+  position: relative;
+  
+}
+.block-container .block:hover{
+  opacity: 0.8;
+}
+
+.block-container .block h3{
+  position: absolute;
+  top:0;
+  padding: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.block-container .block img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+/* About Section */
+.about-section{
+  margin-bottom: 60px;
+}
+.about-section p{
+  margin: 10px 0px 20px 0px;
+}
+.about-section .about-container{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+}
+.about-section .about-container .about-box{
+  width: 400px;
+  height: 100%;
+  display: block;
+}
+.about-section .about-container .about-box img{
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.about-section .about-container .about-box h3{
+  font-weight: 400;
+}
+.about-section .about-container .about-box p:nth-child(3){
+  color: #909090;
+}
+.about-section .about-container .about-box button{
+  width: 100%;
+  height: 35px;
+  border: none;
+  background-color: #f1f1f1;
+}
+.about-section .about-container .about-box button:hover{
+  background: #cccccc;
+}
+/* Contact Section */
+ 
+ 
+.contact-section .form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.contact-section .form form input{
+width: 100%;
+height: 35px;
+font-size: 15px;
+margin: 5px 0;
+border: 1px solid #cccccc;
+padding: 5px 0px 5px 10px;
+}
+.contact-section .form button{
+  width: 120px;
+  height: 35px;
+  border: none;
+  background: #000;
+  color: #fff;
+}
+button{
+  cursor: pointer;
+}
+.contact-section .form button:hover{
+  background: #cccccc;
+  color: #000;
+}
+
+/* Responsive Part */
+
+@media only screen and (max-width:1280px){
+  .block-container{
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+  }
+  .about-section .about-container{
+    flex-wrap: wrap;
+  }
+}
+#map{
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  filter:opacity(0.9);
+}
+footer{
+  width: 100%;
+  height: 50px;
+  background: #000;
+
+}
+footer p{
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+
+
+@media only screen and (max-width:768px){
+  header ul{
+    display: none;
+  }
+  .banner .bannerLogo #arc{
+    display: none;
+  }
+  .block-container{
+    grid-template-columns: auto;
+ 
+  }
+}
+
+
+
+
+
+
+ 
