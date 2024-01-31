@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fashion Blog</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav id="nav">
+        <div class="nav-list-link-items">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-snapchat"></i>
+          <i class="fa-brands fa-flickr"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="nav-list-search-item">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Section -->
+    <main>
+      <div class="banner-header">
+        <h1>JANE BLOGLIFE</h1>
+        <p>Welcome to the blog of <span class="dark-bg">Jane's world</span></p>
+      </div>
+      <div class="banner-img">
+        <img src="img/jane.jpg" alt="" />
+        <div class="textOnTheImage">
+          <h2>Jane's <span>FASHION BLOG</span></h2>
+          <button class="button">SUBSCRIBE</button>
+        </div>
+      </div>
+    </main>
+    <div class="main-content-all">
+      <div class="main-content-left">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <p>Title description,<span id="light">May 2, 2016</span></p>
+          <img src="img/girl_hat.jpg" alt="" class="title-picture" />
+          <p>
+            <b>More Hats!</b> I am crazy about hats these days. Some text about
+            this blog entry. Fashion fashion and mauris neque quam, fermentum ut
+            nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+            placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus
+            at. Phasellus sed ultricies mi non congue ullam corper. Praesent
+            tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta
+            lectus vitae, ultricies congue gravida diam non fringilla. Sunt in
+            culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco.
+          </p>
+          <button class="like-button">
+            <i class="fa-solid fa-thumbs-up"></i> Like
+          </button>
+          <button class="replies" onclick="showResponses(this)">
+            Replies <span>1</span>
+          </button>
+          <div class="responses">
+            <div class="line"></div>
+            <div class="person">
+              <div class="profile-picture">
+                <img src="img/avatar_smoke.jpg" alt="" />
+              </div>
+              <div class="comment">
+                <h3>George <span id="light">May 3, 2015, 6:32 PM</span></h3>
+                <p>Great blog post! Following</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <p>Title description,<span id="light">April 23, 2016</span></p>
+          <img src="img/man_hat.jpg"" class="title-picture" />
+          <p>
+            <b>Hats! The trend this summer is hats for men!</b> Some text about
+            this blog entry. Fashion fashion and mauris neque quam, fermentum ut
+            nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+            placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus
+            at. Phasellus sed ultricies mi non congue ullam corper. Praesent
+            tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta
+            lectus vitae, ultricies congue gravida diam non fringilla.
+          </p>
+          <button class="like-button">
+            <i class="fa-solid fa-thumbs-up"></i> Like
+          </button>
+          <button class="replies" onclick="showResponses(this)">
+            Replies <span>2</span>
+          </button>
+          <div class="responses">
+            <div class="line"></div>
+            <div class="person">
+              <div class="profile-picture">
+                <img src="img/girl_train.jpg" alt="" />
+              </div>
+              <div class="comment">
+                <h3>Amber <span id="light"> April 26, 2015, 10:52 PM</span></h3>
+                <p>
+                  Love your blog page! Simply the best! Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+            <div class="person">
+              <div class="profile-picture">
+                <img src="img/girl_hat.jpg" alt="" />
+              </div>
+              <div class="comment">
+                <h3>Angie <span id="light">May 3, 2015, 6:32 PM</span></h3>
+                <p>Great blog post! Following</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <p>Title description,<span id="light">April 23, 2016</span></p>
+          <img src="img/runway.jpg"" class="title-picture" />
+          <p>
+            <b>Dont miss! </b> Some text about this blog entry. Fashion fashion
+            and mauris neque quam, fermentum ut nisl vitae, convallis maximus
+            nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi
+            non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed
+            vitae justo condimentum, porta lectus vitae, ultricies congue
+            gravida diam non fringilla.
+          </p>
+          <button class="like-button">
+            <i class="fa-solid fa-thumbs-up"></i> Like
+          </button>
+          <button class="replies" onclick="showResponses(this)">
+            Replies <span>3</span>
+          </button>
+          <div class="responses">
+            <div class="line"></div>
+            <div class="person">
+              <div class="profile-picture">
+                <img src="img/boy.jpg" alt="" />
+              </div>
+              <div class="comment">
+                <h3>John <span id="light">April 8, 2015, 10:32 PM</span></h3>
+                <p>
+                  Keep up the GREAT work! I am cheering for you!! Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt.
+                </p>
+              </div>
+            </div>
+            <div class="person">
+              <div class="profile-picture">
+                <img src="img/girl_mountain.jpg" alt="" />
+              </div>
+              <div class="comment">
+                <h3>Jane <span id="light">May 3, 2015, 6:32 PM</span></h3>
+                <p>That was a great runway show! Thanks for everything.</p>
+              </div>
+            </div>
+            <div class="person">
+              <div class="profile-picture">
+                <img src="img/girl_hood.jpg" alt="" />
+              </div>
+              <div class="comment">
+                <h3>Anja <span id="light">April 7, 2015, 9:12 PM</span></h3>
+                <p>Cant wait for the runway to start!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content-right">
+        <div class="about-me">
+          <img src="img/avatar_girl2.jpg" alt="" />
+          <div class="about-text">
+            <h3>My Name</h3>
+            <p>
+              Just me, myself and I, exploring the universe of uknownment. I
+              have a heart of love and a interest of lorem ipsum and mauris
+              neque quam blog. I want to share my world with you.
+            </p>
+          </div>
+        </div>
+        <div class="popular-posts">
+          <div class="header"><h3>Popular Posts</h3></div>
+          <div class="post-people-container">
+            <div class="post-person">
+              <img src="img/avatar_smoke.jpg" alt="" />
+              <div class="post-text">
+                <h3>George</h3>
+                <p>Phasellus sed ultricies</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="post-person">
+              <img src="img/girl_hat.jpg" alt="" />
+              <div class="post-text">
+                <h3>Denim</h3>
+                <p>Sed mattis nunc</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="post-person">
+              <img src="img/man_hat.jpg" alt="" />
+              <div class="post-text">
+                <h3>Sweaters</h3>
+                <p>Praes tinci sed</p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="post-person">
+              <img src="img/girl_train.jpg" alt="" />
+              <div class="post-text">
+                <h3>Workshop</h3>
+                <p>Ultricies congue</p>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="tags">
+          <div class="tags-header"><h3>Tags</h3></div>
+          <div class="tag-section">
+            <span id="selected">Fashion</span> <span>New York</span>
+            <span>London</span> <span>Hats</span> <span>Norway</span>
+            <span> Sweaters</span><span>Ideas</span><span>Deals</span
+            ><span>Accessories</span><span>News</span><span>Clothing</span
+            ><span>Shopping</span><span>Jeans</span><span>Trends</span>
+          </div>
+        </div>
+        <div class="inspiration">
+          <div class="inspiration-header">
+            <h3>Inspiration</h3>
+          </div>
+          <div class="inspiration-gallery">
+            <img src="img/man_hat.jpg" alt="" />
+            <img src="img/girl_hat.jpg" alt="" />
+            <img src="img/girl_hood.jpg" alt="" />
+            <img src="img/boy.jpg" alt="" />
+          </div>
+        </div>
+        <div class="socials">
+          <div class="socials-header">
+            <h3>Follow Me</h3>
+          </div>
+          <div class="links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-flickr"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div class="subscribe-blog">
+          <div class="subscribe-header">
+            <h3>Subscribe</h3>
+          </div>
+          <div class="info">
+            <p>
+              Enter your e-mail below and get notified on the latest blog posts.
+            </p>
+            <form action="#">
+              <input type="email" placeholder="Enter e-mail" />
+            </form>
+            <button class="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="subscribe">
+      <div class="container">
+        <h2>SUBSCRIBE</h2>
+        <i class="fa fa-remove"></i>
+        <p>
+          Join my mailing list to receive updates on the latest blog posts and
+          other things.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Enter e-mail" />
+        </form>
+        <button>Subscribe</button>
+      </div>
+    </div>
+    <footer>
+      <a href="#nav"
+        ><p>To the top <i class="fa-solid fa-arrow-up"></i></p
+      ></a>
+    </footer>
+    <!-- Font Script -->
+    <script
+      src="https://kit.fontawesome.com/799d3db106.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

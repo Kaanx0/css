@@ -1,0 +1,501 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  scroll-behavior: smooth;
+ 
+}
+body{
+  background: #f1f1f1;
+}
+/* Navbar*/
+header nav{
+height: 34px;
+background-color: #000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: #fff;
+}
+
+.nav-list-link-items i ,.nav-list-search-item i{
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px;
+}
+.nav-list-link-items i:hover,.nav-list-search-item i:hover{
+  background: #cccccc;
+  color: #000000;
+}
+main{
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* Banner */
+.banner-header{
+  height: 200px;
+  text-align: center;
+ 
+}
+.banner-header h1{
+  padding: 50px 0px 10px 0px;
+  font-size: 42px;
+  font-weight: 600;
+}
+.banner-header p{
+  font-size: 15px;
+}
+.banner-header p .dark-bg{
+background: #000;
+color: #fff;
+padding: 0px 8px;
+}
+main .banner-img{
+  position: relative;
+}
+main .banner-img img{
+  width:100%;
+  max-height: 1000px;
+  object-fit: cover;
+}
+main .banner-img .textOnTheImage{
+position: absolute;
+color: #fff;
+top: 40%;
+left: 30px;
+}
+main .banner-img .textOnTheImage h2{
+  font-size: 30px;
+  font-weight: 400;
+}
+main .banner-img .textOnTheImage h2 span{
+  display: block;
+  font-size: 50px;
+  font-weight:800;
+}
+main .banner-img .textOnTheImage button{
+  
+  cursor: pointer;
+  background: #9f9f9f;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 24px;
+  font-size: 16px;
+}
+main .banner-img .textOnTheImage button:hover{
+  background: #cccccc;
+}
+/* Subscribe Page */
+#subscribe{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: modal-appear 0.5s;
+}
+
+#subscribe .container{
+  position: relative;
+  margin: 5% auto;
+  padding: 32px;
+  max-width: 760px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+#subscribe .container .fa-remove{
+  cursor: pointer;
+  padding: 5px;
+}
+#subscribe .container .fa-remove:hover{
+  background: #cccccc;
+}
+.container h2{
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-bottom: 4px;
+}
+.container p{
+  font-size: 16px;
+  font-weight: 300;
+  text-align: start;
+}
+ 
+.container input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.container button{
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  background-color: #f44336;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+.container button:hover{
+  background: #ff5338;
+}
+.container i{
+  position: absolute;
+  top:30px;
+  right: 34px;
+  padding: 8px 14px;
+}
+
+
+/* Whole Content */
+
+.main-content-all{
+  max-width: 1500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 3fr 1fr; 
+  gap: 20px;
+  border-top: none;
+}
+.main-content-all .card{
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.main-content-all .card .line{
+  width: 100%;
+  height: 1px;
+  background: rgb(238, 238, 238);
+  margin: 40px 0px 20px 0px;
+}
+.main-content-all .card h2{
+  font-size: 22px;
+  font-weight: 400;
+}
+.main-content-all .card h2,p{
+  text-align: center;
+  margin: 6px 0;
+}
+.main-content-all .card .title-picture{
+  width: 100%;
+  margin: 20px 0;
+}
+.main-content-all .card p{
+  font-weight: 300;
+  font-size: 16px;
+  text-align: start;
+   
+}
+.main-content-all .card b{
+  font-weight: 400;
+}
+#light{
+  color: #9f9f9f;
+}
+.main-content-all button{
+margin-top: 40px;
+width: 65px;
+border:1px solid #9f9f9f;
+background: none;
+text-align: center;
+font-size: 15px;
+cursor: pointer;
+padding: 6px;
+}
+.main-content-all .replies{
+  width: 100px;
+  background: #000;
+  color: #fff;
+  float: right;
+  font-weight: 500;
+  border: none;
+}
+.main-content-all .replies:hover{
+  background:#ccc;
+  color:#000;
+}
+.main-content-all button span{
+  padding: 0px 8px;
+  background: #fff;
+  color: #000;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.main-content-all button:hover{
+  background:#ccc;
+}
+.main-content-all .responses{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.main-content-all .responses img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.main-content-all .responses .person{
+  display: flex;
+  align-items: center;
+  gap:40px;
+}
+.main-content-all .responses .person  h3{
+  font-weight: 400;
+  font-size: 18px;
+}
+.main-content-all .responses .person span{
+  font-size: 14px;
+}
+.main-content-all .responses .person p{
+  font-weight: 300;
+  font-size: 16px;
+  text-align:start;
+}
+
+/* Right Section */
+ 
+.main-content-right .about-me img{
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  filter:grayscale(0.8);
+}
+
+
+.main-content-right .about-me .about-text{
+  padding: 15px;
+  background: #000;
+  color: #fff;
+}
+.main-content-right .about-me .about-text h3{
+  font-size: 15px;
+  font-weight: 400;
+}
+.main-content-right .about-me .about-text p{
+  
+  text-align: start;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Popular Posts */
+.popular-posts{
+  margin: 30px 0px;
+}
+.popular-posts .header{
+  width: 100%;
+  height: 50px;
+  background: #000;
+}
+.popular-posts .header h3{
+  color: #fff;
+  padding: 14px 0px 0px 13px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.popular-posts .post-people-container{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+ .post-person img{
+  width: 45px;
+  height: 45px;
+ }
+ .post-person{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ }
+ .post-person h3{
+  font-size: 17px;
+  font-weight: 400;
+ }
+ .post-person p{
+  font-size: 15px;
+  font-weight: 300;
+ }
+.popular-posts .line{
+  width: 100%;
+  height: 1px;
+  background: rgb(238, 238, 238);
+}
+
+/* Tags */
+.tags{
+  margin-bottom: 20px;
+}
+.tags .tags-header{
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+}
+.tags-header h3{
+    font-size: 17px;
+    font-weight: 400;
+}
+.tag-section{
+  padding: 10px;
+  min-height: 120px;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+}
+.tag-section span{
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 13px;
+  background: #f1f1f1;
+}
+.tag-section #selected{
+  background: #000;
+  color: #fff;
+}
+
+/* Inspiration */
+.inspiration{
+  background: #fff;
+}
+.inspiration-header{
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+}
+.inspiration-header h3{
+  font-size: 17px;
+  font-weight: 400;
+}
+.inspiration-gallery{
+  padding: 10px;
+  display: grid;
+  grid-template-rows:auto auto;
+  grid-template-columns:auto;
+  gap: 20px;
+}
+.inspiration-gallery img{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+/* Socials */
+.socials{
+  margin: 20px 0px;
+  background: #fff;
+}
+.socials .socials-header{
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+}
+.socials .links{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  cursor: pointer;
+}
+.socials .links i:hover{
+  color: #9f9f9f;
+}
+/* Subscribe */
+.subscribe-blog{
+  background: #fff;
+}
+.subscribe-blog .info{
+  padding: 10px;
+}
+.subscribe-blog .info input{
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+.subscribe-blog .info button{
+  width: 100%;
+  background: #f44336;
+  color: #fff;
+  border: none;
+  margin-top: 20px;
+}
+.subscribe-blog .subscribe-header{
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+}
+.subscribe-blog p{
+  text-align: start;
+  font-weight: 400;
+}
+footer{
+  width: 100%;
+  height: 100px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer a{
+  color: #000;
+}
+footer p{
+  width: 100px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (max-width: 760px) {
+  main .banner-img .textOnTheImage h2 span{
+    display: none;
+  }
+  .main-content-all{
+    grid-template-columns: 4fr;
+  }
+  .main-content-all .inspiration-gallery{
+    grid-template-columns:auto auto;}
+}
+@keyframes modal-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
