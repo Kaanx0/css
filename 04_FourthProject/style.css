@@ -405,6 +405,9 @@ padding: 6px;
   height: 100px;
   object-fit: cover;
 }
+.inspiration-gallery img:hover{
+  opacity: 0.8;
+}
 /* Socials */
 .socials{
   margin: 20px 0px;
